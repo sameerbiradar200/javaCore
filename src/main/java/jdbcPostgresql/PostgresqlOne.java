@@ -23,6 +23,7 @@ public class PostgresqlOne {
 
                 statement.execute(createTable);
                 System.out.println("Table 'name' created or already exists.");
+                System.out.println();
 
                 String addData ="INSERT INTO name (name, age) "
                         + "VALUES ('sameer biradar', 23), "
@@ -41,8 +42,7 @@ public class PostgresqlOne {
                     int id =resultSet.getInt("id");
                     String name =resultSet.getString("name");
                     int age =resultSet.getInt("age");
-                    System.out.printf("Name : %name \n Id: %d  Age : %d%n",id,name,age);//hi
-                }
+                    System.out.printf("Name: %s \nId: %d  Age: %d\n\n", name, id, age);                }
 
 
 
