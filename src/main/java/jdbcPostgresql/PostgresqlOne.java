@@ -41,7 +41,7 @@ public class PostgresqlOne {
                     int id =resultSet.getInt("id");
                     String name =resultSet.getString("name");
                     int age =resultSet.getInt("age");
-                    System.out.printf("Name : %name \n Id: %d  Age : %d%n",id,name,age);
+                    System.out.printf("Name : %name \n Id: %d  Age : %d%n",id,name,age);//hi
                 }
 
 
